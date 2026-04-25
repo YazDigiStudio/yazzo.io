@@ -4,7 +4,7 @@ import Footer from "../../components/Footer";
 import BookingModal from "../../components/BookingModal";
 import Link from "next/link";
 import Image from "next/image";
-import { CalendarDays, Building2, Tag, Map, Sparkles, Target, Ticket, MapPin, Globe } from "lucide-react";
+import { CalendarDays, Building2, Tag, Map, Sparkles, Target, Ticket, MapPin, Globe, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Investors",
@@ -45,13 +45,12 @@ export default function Investors() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="/YAZZO_pitch_deck.pdf"
-              download
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-yazzo-700 font-bold px-8 py-3.5 rounded-full hover:bg-yazzo-50 transition-colors shadow-lg text-sm md:text-base"
             >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-              Download Deck
+              <ExternalLink className="w-4 h-4" />
+              View Pitch Deck
             </a>
             <BookingModal
               buttonLabel="Book a Meeting"
@@ -323,13 +322,12 @@ export default function Investors() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="/YAZZO_pitch_deck.pdf"
-              download
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-yazzo-700 font-bold px-8 py-4 rounded-full hover:bg-yazzo-50 transition-colors shadow-lg text-sm md:text-base"
             >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-              Download Deck
+              <ExternalLink className="w-4 h-4" />
+              View Pitch Deck
             </a>
             <BookingModal
               buttonLabel="Book a Meeting"
