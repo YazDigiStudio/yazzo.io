@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 import BookingModal from "../../components/BookingModal";
 import Link from "next/link";
 import Image from "next/image";
+import { CalendarDays, Building2, Tag, Map, Sparkles, Target, Ticket, MapPin, Globe } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Investors",
@@ -136,39 +137,73 @@ export default function Investors() {
         <div className="max-w-4xl mx-auto">
           <p className="text-sm font-semibold text-yazzo-600 uppercase tracking-widest mb-4">Business Model</p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">SaaS + marketplace.</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                icon: "🏢",
-                title: "Partner SaaS",
-                price: "€29.90",
-                unit: "/mo",
-                desc: "Per company. First two months free trial. Predictable recurring B2B revenue.",
-              },
-              {
-                icon: "💳",
-                title: "Reservation Fee",
-                price: "% of deal",
-                unit: "",
-                desc: "Percentage-based fee tied to the discount amount. Scalable transaction upside.",
-              },
-              {
-                icon: "⭐",
-                title: "Premium Users",
-                price: "€5.99",
-                unit: "/mo",
-                desc: "Optional consumer subscription for enhanced features and priority access.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm">
-                <div className="text-3xl mb-4">{item.icon}</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-                <p className="text-2xl font-bold text-yazzo-600 mb-3">
-                  {item.price}<span className="text-base font-normal text-gray-400">{item.unit}</span>
-                </p>
-                <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
+
+          {/* For Partners */}
+          <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">For Partners</p>
+          <div className="mb-3">
+            <p className="text-sm font-semibold text-gray-600 mb-3">Advertising — pay for visibility on the map</p>
+            <div className="grid sm:grid-cols-2 gap-6 mb-8">
+              {[
+                {
+                  icon: <CalendarDays className="w-6 h-6 text-yazzo-500" />,
+                  title: "Single Listing",
+                  price: "€5",
+                  unit: "/day",
+                  desc: "Per listing, per day. For small or occasional publishers — one event, one class, one announcement. No commitment.",
+                },
+                {
+                  icon: <Building2 className="w-6 h-6 text-yazzo-500" />,
+                  title: "Monthly Subscription",
+                  price: "€29.90",
+                  unit: "/mo",
+                  desc: "Per company. Includes 10 free listings per month. First two months free trial. Predictable recurring B2B revenue.",
+                },
+              ].map((item) => (
+                <div key={item.title} className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm">
+                  <div className="mb-4">{item.icon}</div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
+                  <p className="text-2xl font-bold text-yazzo-600 mb-3">
+                    {item.price}<span className="text-base font-normal text-gray-400">{item.unit}</span>
+                  </p>
+                  <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mb-12">
+            <p className="text-sm font-semibold text-gray-600 mb-3">Offers — publish a deal, pay nothing</p>
+            <div className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm max-w-sm">
+              <div className="mb-4"><Tag className="w-6 h-6 text-yazzo-500" /></div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Reservation Fee</h3>
+              <p className="text-2xl font-bold text-yazzo-600 mb-3">% of deal</p>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Free for any partner publishing an offer with a discount. No upfront cost, no monthly commitment. The discount is the entry — Yazzo handles the rest.
+              </p>
+            </div>
+          </div>
+
+          {/* For Users */}
+          <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">For Users</p>
+          <div className="grid sm:grid-cols-2 gap-6 max-w-2xl">
+            <div className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm">
+              <div className="mb-4"><Map className="w-6 h-6 text-yazzo-500" /></div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Free</h3>
+              <p className="text-2xl font-bold text-yazzo-600 mb-3">€0</p>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Browse and discover everything on the map. Ads are always free to view. Pay a small booking fee when claiming an offer.
+              </p>
+            </div>
+            <div className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm">
+              <div className="mb-4"><Sparkles className="w-6 h-6 text-yazzo-500" /></div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Premium</h3>
+              <p className="text-2xl font-bold text-yazzo-600 mb-3">
+                €5.99<span className="text-base font-normal text-gray-400">/mo</span>
+              </p>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                10 free offer bookings per month — booking fee waived. Enhanced features and priority access.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -218,13 +253,13 @@ export default function Investors() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Focused entry. Scalable model.</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { icon: "🎯", label: "Pilot in Helsinki", desc: "One district cluster first — density over breadth" },
-              { icon: "🎭", label: "Culture & dining", desc: "Vertical focus before horizontal expansion" },
-              { icon: "🇫🇮", label: "Finnish cities", desc: "City-by-city rollout after Helsinki validation" },
-              { icon: "🌍", label: "Europe growth", desc: "Long-term ambition across Europe" },
+              { icon: <Target className="w-6 h-6 text-yazzo-500 mx-auto" />, label: "Pilot in Helsinki", desc: "One district cluster first — density over breadth" },
+              { icon: <Ticket className="w-6 h-6 text-yazzo-500 mx-auto" />, label: "Culture & activities", desc: "Vertical focus before horizontal expansion" },
+              { icon: <MapPin className="w-6 h-6 text-yazzo-500 mx-auto" />, label: "Finnish cities", desc: "City-by-city rollout after Helsinki validation" },
+              { icon: <Globe className="w-6 h-6 text-yazzo-500 mx-auto" />, label: "Europe growth", desc: "Long-term ambition across Europe" },
             ].map((item) => (
               <div key={item.label} className="bg-gray-50 rounded-2xl p-6 text-center">
-                <div className="text-3xl mb-3">{item.icon}</div>
+                <div className="mb-3">{item.icon}</div>
                 <p className="font-bold text-gray-900 text-sm mb-2">{item.label}</p>
                 <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
               </div>
