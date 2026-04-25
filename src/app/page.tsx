@@ -4,9 +4,9 @@ import FloatingNav from "../components/FloatingNav";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Yazzo — Discover Events & Dining in the Moment",
+  title: "Yazzo — The Real-Time Layer of Your City",
   description:
-    "Discover local events, theatre, dining and music with real-time deals right on your map. Launching in Helsinki 2026.",
+    "See everything happening in your city — dining, events, yoga, dance, music and more — live on your map. Launching in Helsinki 2026.",
   openGraph: {
     url: "https://yazzo.io",
   },
@@ -25,7 +25,7 @@ const appSchema = {
     priceCurrency: "EUR",
   },
   description:
-    "Discover local events, theatre, dining and music with real-time deals right on your map. Launching in Helsinki 2026.",
+    "See everything happening in your city — dining, events, yoga, dance, music and more — live on your map. Launching in Helsinki 2026.",
   url: "https://yazzo.io",
 };
 

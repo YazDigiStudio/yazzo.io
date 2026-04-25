@@ -11,7 +11,7 @@ export default function HeroSlideshow() {
           {/* YAZZO badge — exact logo from the app */}
           <div className="flex justify-center mb-6">
             <Image
-              src="/TextLogo.png"
+              src="/images/TextLogo_noBG.png"
               alt="YAZZO"
               width={160}
               height={60}
@@ -22,8 +22,8 @@ export default function HeroSlideshow() {
           {/* Own the Moment! — real asset from the app, inverted white */}
           <div className="flex justify-center mb-8">
             <Image
-              src="/OwnTheMomentNoBG.png"
-              alt="Own the Moment!"
+              src="/images/Own_The_City_noBG.png"
+              alt="Own the City"
               width={600}
               height={160}
               className="w-72 sm:w-96 md:w-[480px] h-auto brightness-0 invert drop-shadow-lg"
@@ -32,13 +32,13 @@ export default function HeroSlideshow() {
 
           {/* Tagline */}
           <p className="text-white/85 text-lg md:text-xl mb-10 max-w-xl mx-auto leading-relaxed">
-            Discover local events, theatre, dining and music — with real‑time deals right on your map.
+            See everything happening in your city — dining, events, yoga, dance, music and more — live on your map.
           </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="#features"
+              href="#screenshots"
               className="bg-white text-yazzo-700 font-bold px-8 py-3.5 rounded-full hover:bg-yazzo-50 transition-colors shadow-lg text-sm md:text-base"
             >
               See How It Works
@@ -72,7 +72,7 @@ export default function HeroSlideshow() {
             Own the city, your way
           </h2>
           <p className="text-center text-gray-500 text-lg mb-16 max-w-2xl mx-auto">
-            Yazzo connects you with real‑time deals on events and dining right where you are.
+            Yazzo gives you real-time visibility into everything happening around you — and lets you book it in seconds.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -102,9 +102,9 @@ export default function HeroSlideshow() {
                   className="rounded-[2.5rem] w-40 sm:w-48 md:w-52 border-4 border-white"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Last-minute deals</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">What's on right now</h3>
               <p className="text-gray-500 leading-relaxed text-sm">
-                Venues publish instant offers — up to 70 % off for tonight. You pick, you save, nobody loses a seat.
+                See what's open, what's on, and what's available today — before it fills up.
               </p>
             </div>
 
@@ -120,7 +120,7 @@ export default function HeroSlideshow() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Reserve & redeem</h3>
               <p className="text-gray-500 leading-relaxed text-sm">
-                Book directly in the app and pay a small fee. Show your QR code at the door. Done.
+                Book directly in the app. Show your QR code at the door. Done.
               </p>
             </div>
           </div>
@@ -135,19 +135,22 @@ export default function HeroSlideshow() {
           </h2>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { emoji: "🍽️", label: "Dining" },
-              { emoji: "🎭", label: "Theatre" },
-              { emoji: "🎵", label: "Music" },
-              { emoji: "🎪", label: "Events" },
-              { emoji: "🏙️", label: "City Life" },
-              { emoji: "🌙", label: "Nightlife" },
-            ].map((cat) => (
+              "Dining",
+              "Events",
+              "Music",
+              "Sports & Fitness",
+              "Yoga & Wellness",
+              "Dance",
+              "Theatre",
+              "Art & Exhibitions",
+              "Kids & Family",
+              "Nightlife",
+            ].map((label) => (
               <span
-                key={cat.label}
-                className="flex items-center gap-2 bg-white border border-gray-200 text-gray-700 font-medium px-5 py-2.5 rounded-full shadow-sm text-sm"
+                key={label}
+                className="bg-white border border-gray-200 text-gray-700 font-medium px-5 py-2.5 rounded-full shadow-sm text-sm"
               >
-                <span>{cat.emoji}</span>
-                {cat.label}
+                {label}
               </span>
             ))}
           </div>
@@ -159,16 +162,22 @@ export default function HeroSlideshow() {
         <div className="max-w-2xl mx-auto">
           <div className="flex justify-center mb-6">
             <Image
-              src="/OwnTheMomentNoBG.png"
-              alt="Own the Moment!"
+              src="/images/TextLogo_noBG.png"
+              alt="YAZZO"
+              width={160}
+              height={60}
+              className="h-10 w-auto"
+            />
+          </div>
+          <div className="flex justify-center mb-6">
+            <Image
+              src="/images/Own_The_City_noBG.png"
+              alt="Own the City"
               width={600}
               height={160}
               className="w-64 sm:w-80 md:w-96 h-auto brightness-0 invert"
             />
           </div>
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            Ready to own the moment?
-          </h2>
           <p className="text-white/75 text-lg mb-10">
             Launching in Helsinki in 2026. Explore the pitch deck or learn about our mission.
           </p>

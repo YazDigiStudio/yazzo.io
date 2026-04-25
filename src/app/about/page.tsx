@@ -6,7 +6,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Company",
   description:
-    "Learn how Yazzo is transforming local event discovery by connecting venues and audiences through real-time, location-based offers. Launching Helsinki 2026.",
+    "Learn how Yazzo is building the real-time layer of the city — connecting people with everything happening around them, from dining and events to yoga, dance and more. Launching Helsinki 2026.",
   openGraph: {
     url: "https://yazzo.io/about",
   },
@@ -21,10 +21,10 @@ export default function About() {
       <section className="bg-gradient-to-br from-yazzo-500 via-yazzo-600 to-yazzo-800 pt-36 pb-24 px-6 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold text-white">
-            Yazzo transforms how people discover local experiences
+            Yazzo is the real-time layer of the city
           </h1>
           <p className="text-lg md:text-xl text-white/85">
-            Connecting event organizers and restaurants with audiences through real-time, location-based offers
+            Connecting people with everything happening around them — dining, events, yoga, dance, music and more
           </p>
 
           {/* Scroll down arrow */}
@@ -41,10 +41,10 @@ export default function About() {
         <section id="problem" className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">The Problem</h2>
           <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            Events and restaurants lose revenue when seats stay empty. Cultural happenings can't react fast when ticket sales slow. Restaurants face low-traffic hours and food waste.
+            Restaurants lose revenue during slow hours. Theatres and concerts play to half-empty halls. Yoga studios and dance schools run classes with open spots. Sports facilities sit underused.
           </p>
           <p className="text-gray-600 text-lg leading-relaxed">
-            Current channels like social media and ads are too slow and not location-aware. They don't allow organizers to respond quickly to changing demand.
+            The current solution — social media ads — is too slow, too broad, and not built for real-time, location-aware discovery. Businesses pay to reach everyone and convert few. There is no layer between "something is happening right now" and the people nearby who would want to know.
           </p>
         </section>
 
@@ -53,10 +53,10 @@ export default function About() {
           <div className="flex-1">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Our Solution</h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-4">
-              Yazzo connects people to local events and restaurants through real-time offers on a map. Organizers publish instant deals — for example "–50% for tonight's concert".
+              Yazzo is a map-based app that shows everything happening in the city — right now and tomorrow. Dining, events, concerts, yoga classes, dance courses, theatre, sports. If it is happening nearby, it is on the map.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Users reserve directly in the app, pay a small commission, and receive a QR code to redeem. Everyone benefits: more visibility, higher occupancy, less waste.
+              Partners publish in seconds. Users discover, decide, and book — all in one flow. No scrolling feeds. No ads that miss the moment. Just the city, live.
             </p>
           </div>
           <div
@@ -82,13 +82,35 @@ export default function About() {
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Mission</h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Help event organizers and restaurants fill empty seats through real-time, location-based offers that connect supply with demand at the perfect moment.
+                Build the real-time layer of the city — connecting people with everything happening around them, and giving every local business a better way to reach nearby customers than social media ads.
               </p>
             </div>
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Vision</h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Become the leading platform for promoting new experiences and local services in the Nordics, transforming how people discover and enjoy their cities.
+                Become the leading local discovery platform in the Nordics — the first place people open when they want to know what to do today, and the first place businesses publish when they have something to offer right now.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Business Model */}
+        <section className="mb-16">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Business Model</h2>
+          <p className="text-gray-600 text-lg leading-relaxed mb-8">
+            Yazzo offers two ways for partners to reach users — one for visibility, one for conversion.
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="border border-gray-200 rounded-2xl p-6">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Visibility listing</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Partners pay a small flat fee to appear on the map. Suitable for any business that wants to be discoverable — restaurants, studios, venues, event organizers. Low barrier, predictable revenue for Yazzo.
+              </p>
+            </div>
+            <div className="border border-yazzo-500 rounded-2xl p-6">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Offer listing</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Partners publish a time-limited offer — a last-minute deal, an available class spot, a discounted ticket. Users book and pay directly in the app. Yazzo takes a commission per transaction. Revenue scales with usage.
               </p>
             </div>
           </div>

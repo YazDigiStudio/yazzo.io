@@ -272,8 +272,8 @@ export default function Investors() {
         <div className="max-w-2xl mx-auto">
           <div className="flex justify-center mb-6">
             <Image
-              src="/OwnTheMomentNoBG.png"
-              alt="Own the Moment!"
+              src="/images/Own_The_City_noBG.png"
+              alt="Own the City"
               width={600}
               height={160}
               className="w-56 sm:w-72 h-auto brightness-0 invert"
