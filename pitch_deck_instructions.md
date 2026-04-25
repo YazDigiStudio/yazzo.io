@@ -86,20 +86,33 @@ Suggested structure:
 ---
 
 ### Slide 6 — Business Model
-The deck shows one model (SaaS subscription + reservation fee). The new positioning
-introduces two clearer tiers. Consider restructuring:
+Restructure into two clear groups: For Partners and For Users.
 
-**Tier 1 — Visibility listing (advertising)**
-Partner pays a flat monthly fee to appear on the map.
-No booking required. Works like a local ad — better targeted than Facebook
-because users are actively looking for something to do nearby.
+**For Partners — two ways to publish:**
 
-**Tier 2 — Bookable offer (marketplace)**
-Partner publishes a time-limited listing. User books and pays in-app.
-Yazzo takes a commission per transaction.
+- **Single listing — €5/day**
+  Per listing, per day. No commitment. For small or occasional publishers
+  (one event, one class, one announcement).
 
-This maps to: recurring subscription revenue (Tier 1) + transaction revenue (Tier 2).
-Keep "Recurring base + scalable upside" — it still applies perfectly.
+- **Monthly subscription — €29.90/month**
+  Per company. Includes 10 free listings per month. First two months free trial.
+
+- **Offer listing — free**
+  Partners publish a bookable offer with a discount at no cost.
+  Users pay Yazzo a booking fee when they claim the offer.
+  The discount is the entry — partners pay nothing, Yazzo earns on every booking.
+  Note: a minimum discount threshold applies to prevent low-value offers.
+
+**For Users — free by default:**
+
+- Browsing and viewing everything on the map is always free.
+- Users pay a small booking fee only when they claim an offer.
+
+- **Premium — €5.99/month**
+  10 free offer bookings per month (booking fee waived). Enhanced features.
+
+Key message for investors: recurring B2B revenue (subscriptions) + transaction revenue
+(booking fees) + optional consumer subscription. "Recurring base + scalable upside."
 
 ---
 
@@ -128,7 +141,7 @@ No changes needed. Strong slide.
 | Avoid | Use instead |
 |---|---|
 | Venues | Local businesses and organizers / Partners |
-| Offers / Deals | Listings / What's available / What's on |
+| Offers as the only mechanic | Ads (visibility) + Offers (bookable deals) — two distinct paths |
 | Empty seats | Unused capacity |
 | Nightlife | City life / Everything happening in your city |
 | Theatre, concerts, restaurants (only) | + Yoga, dance, fitness, art, kids activities |
