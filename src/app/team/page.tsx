@@ -5,6 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  // Kept online for people we send here directly, but not for search:
+  // yazzoapp.com is the public face of Yazzo.
+  robots: { index: false, follow: false },
   title: "Team",
   description:
     "Meet the people building Yazzo — combining first-hand experience from Finland's cultural sector with modern software development expertise.",

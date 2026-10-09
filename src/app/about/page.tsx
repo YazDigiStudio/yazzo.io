@@ -4,6 +4,9 @@ import Footer from "../../components/Footer";
 import Image from "next/image";
 
 export const metadata: Metadata = {
+  // Kept online for people we send here directly, but not for search:
+  // yazzoapp.com is the public face of Yazzo.
+  robots: { index: false, follow: false },
   title: "Company",
   description:
     "Learn how Yazzo is building the real-time layer of the city — connecting people with everything happening around them, from dining and events to yoga, dance and more. Launching Helsinki 2026.",

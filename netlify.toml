@@ -4,3 +4,34 @@
 
 [build.environment]
   NODE_VERSION = "20"
+
+# yazzo.io is retired in favour of yazzoapp.com (decided 2026-10-09). Only
+# /investors, /team and /about (and the files they need) stay online.
+#
+# Netlify applies a plain redirect only where no file exists at that path, so
+# the kept pages, images and assets are untouched. "/" and /products do exist
+# as files, so they need force = true.
+
+[[redirects]]
+  from = "/"
+  to = "https://yazzoapp.com/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products"
+  to = "https://yazzoapp.com/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/*"
+  to = "https://yazzoapp.com/"
+  status = 301
+  force = true
+
+# Anything else that does not exist (old links, /waitlist, typos).
+[[redirects]]
+  from = "/*"
+  to = "https://yazzoapp.com/"
+  status = 301
