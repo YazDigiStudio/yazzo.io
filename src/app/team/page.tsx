@@ -11,8 +11,17 @@ export const metadata: Metadata = {
   title: "Team",
   description:
     "Meet the people building Yazzo — combining first-hand experience from Finland's cultural sector with modern software development expertise.",
+  // A page-level openGraph replaces the layout's whole block, so the image
+  // and site name have to be repeated here or the share preview loses them.
   openGraph: {
     url: "https://yazzo.io/team",
+    siteName: "Yazzo",
+    type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Yazzo" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og-image.jpg"],
   },
 };
 
@@ -38,7 +47,7 @@ export default function Team() {
           <div className="bg-white border border-gray-100 rounded-2xl p-8 text-center shadow-sm">
             <div className="mb-6 flex justify-center">
               <Image
-                src="/TimoSquare.png"
+                src="/TimoSquare.jpg"
                 alt="Timo Saari"
                 width={200}
                 height={200}
@@ -66,7 +75,7 @@ export default function Team() {
           <div className="bg-white border border-gray-100 rounded-2xl p-8 text-center shadow-sm">
             <div className="mb-6 flex justify-center">
               <Image
-                src="/venlaSquare.png"
+                src="/venlaSquare.jpg"
                 alt="Venla Ilona Blom"
                 width={200}
                 height={200}

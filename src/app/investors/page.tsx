@@ -10,8 +10,17 @@ export const metadata: Metadata = {
   title: "Investors",
   description:
     "Yazzo pre-seed investment opportunity. Real-time capacity for cities — launching in Helsinki 2026. Book a meeting to learn more.",
+  // A page-level openGraph replaces the layout's whole block, so the image
+  // and site name have to be repeated here or the share preview loses them.
   openGraph: {
     url: "https://yazzo.io/investors",
+    siteName: "Yazzo",
+    type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Yazzo" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og-image.jpg"],
   },
 };
 
