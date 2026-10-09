@@ -30,34 +30,6 @@
   status = 301
   force = true
 
-# Only /about is public for now (2026-10-09). /team and /investors still exist
-# as files, so they need force = true. They are 302 (temporary), not 301, so
-# browsers will not cache them forever and the pages can come back later:
-# delete these four rules to restore them.
-[[redirects]]
-  from = "/investors"
-  to = "/about/"
-  status = 302
-  force = true
-
-[[redirects]]
-  from = "/investors/*"
-  to = "/about/"
-  status = 302
-  force = true
-
-[[redirects]]
-  from = "/team"
-  to = "/about/"
-  status = 302
-  force = true
-
-[[redirects]]
-  from = "/team/*"
-  to = "/about/"
-  status = 302
-  force = true
-
 # Anything else that does not exist (old links, /waitlist, typos).
 [[redirects]]
   from = "/*"

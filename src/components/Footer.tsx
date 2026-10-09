@@ -24,6 +24,12 @@ export default function Footer() {
             <Link href="/about" className="text-white/60 hover:text-white transition-colors">
               Company
             </Link>
+            <Link href="/team" className="text-white/60 hover:text-white transition-colors">
+              Team
+            </Link>
+            <Link href="/investors" className="text-white/60 hover:text-white transition-colors">
+              Investors
+            </Link>
           </div>
 
           {/* Contact Email */}

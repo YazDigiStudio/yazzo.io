@@ -41,8 +41,17 @@ export default function FloatingNav() {
           <Link href="/about" className={linkClass("/about")}>
             Company
           </Link>
-          {/* Team and For Investors links removed 2026-10-09: only /about is
-              public for now (see netlify.toml). Restore with the redirects. */}
+          <Link href="/team" className={linkClass("/team")}>
+            Team
+          </Link>
+          <Link
+            href="/investors"
+            className={`px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-semibold transition-colors shadow-yazzo text-white ${
+              normalizedPath === "/investors" ? "bg-yazzo-700" : "bg-yazzo-500 hover:bg-yazzo-600"
+            }`}
+          >
+            For Investors
+          </Link>
         </div>
       </div>
     </nav>
