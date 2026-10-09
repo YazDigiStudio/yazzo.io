@@ -21,7 +21,9 @@ export default function FloatingNav() {
     <nav className="fixed top-4 left-4 right-4 z-50">
       <div className="bg-white/95 backdrop-blur-md border border-gray-200 rounded-full px-4 py-2 md:px-6 md:py-3 flex items-center gap-4 shadow-md max-w-2xl mx-auto">
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        {/* yazzo.io's homepage redirects to yazzoapp.com, so link there
+            directly instead of going through the redirect. */}
+        <a href="https://yazzoapp.com" className="flex items-center">
           <Image
             src="/logo2noBG.png"
             alt="Yazzo"
@@ -29,13 +31,13 @@ export default function FloatingNav() {
             height={32}
             className="w-6 h-6 md:w-8 md:h-8"
           />
-        </Link>
+        </a>
 
         {/* Navigation Links */}
         <div className="flex items-center gap-3 md:gap-4 ml-auto">
-          <Link href="/" className={linkClass("/")}>
-            Home
-          </Link>
+          <a href="https://yazzoapp.com" className={linkClass("")}>
+            Yazzo App
+          </a>
           <Link href="/about" className={linkClass("/about")}>
             Company
           </Link>

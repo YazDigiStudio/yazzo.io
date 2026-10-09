@@ -4,6 +4,9 @@ import Footer from "../../components/Footer";
 import BookingModal from "../../components/BookingModal";
 
 export const metadata: Metadata = {
+  // Kept online for people we send here directly, but not for search:
+  // yazzoapp.com is the public face of Yazzo.
+  robots: { index: false, follow: false },
   title: "Investors",
   description:
     "Yazzo pre-seed investment opportunity. Real-time capacity for cities — launching in Helsinki 2026. Book a meeting to learn more.",

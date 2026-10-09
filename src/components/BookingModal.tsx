@@ -25,7 +25,9 @@ export default function BookingModal({ buttonLabel, buttonClassName }: Props) {
     const params = new URLSearchParams();
     formData.forEach((value, key) => params.append(key, value.toString()));
 
-    await fetch("/", {
+    // Posted to the investors page, not "/": the homepage redirects to
+    // yazzoapp.com, and a redirect would swallow the form submission.
+    await fetch("/investors/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: params.toString(),
