@@ -3,3 +3,6 @@ node_modules
 out
 .DS_Store
 tsconfig.tsbuildinfo
+
+# Netlify CLI build/deploy artifacts
+.netlify
