@@ -10,8 +10,17 @@ export const metadata: Metadata = {
   title: "Company",
   description:
     "Learn how Yazzo is building the real-time layer of the city — connecting people with everything happening around them, from dining and events to yoga, dance and more. Launching Helsinki 2026.",
+  // A page-level openGraph replaces the layout's whole block, so the image
+  // and site name have to be repeated here or the share preview loses them.
   openGraph: {
     url: "https://yazzo.io/about",
+    siteName: "Yazzo",
+    type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Yazzo" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og-image.jpg"],
   },
 };
 
