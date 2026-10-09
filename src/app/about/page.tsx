@@ -70,7 +70,7 @@ export default function About() {
             }}
           >
             <Image
-              src="/images/IMG_1106.PNG"
+              src="/images/IMG_1106.jpg"
               alt="Yazzo map with live deals in Helsinki"
               width={220}
               height={475}
@@ -129,7 +129,7 @@ export default function About() {
             }}
           >
             <Image
-              src="/images/IMG_1109.PNG"
+              src="/images/IMG_1109.jpg"
               alt="Yazzo offer detail view"
               width={220}
               height={475}

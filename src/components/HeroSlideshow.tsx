@@ -79,7 +79,7 @@ export default function HeroSlideshow() {
             <div className="flex flex-col items-center text-center">
               <div className="drop-shadow-2xl mb-8">
                 <Image
-                  src="/images/IMG_1105.PNG"
+                  src="/images/IMG_1105.jpg"
                   alt="Yazzo map view showing Helsinki"
                   width={220}
                   height={475}
@@ -95,7 +95,7 @@ export default function HeroSlideshow() {
             <div className="flex flex-col items-center text-center md:-mt-8">
               <div className="drop-shadow-2xl mb-8">
                 <Image
-                  src="/images/IMG_1109.PNG"
+                  src="/images/IMG_1109.jpg"
                   alt="Yazzo offer detail — Nordic Tasting Menu"
                   width={220}
                   height={475}
@@ -111,7 +111,7 @@ export default function HeroSlideshow() {
             <div className="flex flex-col items-center text-center">
               <div className="drop-shadow-2xl mb-8">
                 <Image
-                  src="/images/IMG_1112.PNG"
+                  src="/images/IMG_1112.jpg"
                   alt="Yazzo My Offers screen with QR code"
                   width={220}
                   height={475}

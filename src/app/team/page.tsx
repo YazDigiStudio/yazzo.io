@@ -38,7 +38,7 @@ export default function Team() {
           <div className="bg-white border border-gray-100 rounded-2xl p-8 text-center shadow-sm">
             <div className="mb-6 flex justify-center">
               <Image
-                src="/TimoSquare.png"
+                src="/TimoSquare.jpg"
                 alt="Timo Saari"
                 width={200}
                 height={200}
@@ -66,7 +66,7 @@ export default function Team() {
           <div className="bg-white border border-gray-100 rounded-2xl p-8 text-center shadow-sm">
             <div className="mb-6 flex justify-center">
               <Image
-                src="/venlaSquare.png"
+                src="/venlaSquare.jpg"
                 alt="Venla Ilona Blom"
                 width={200}
                 height={200}
