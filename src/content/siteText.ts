@@ -108,19 +108,19 @@ export const ABOUT_TEXT = {
     stand: [
       {
         title: "Optimize existing resources",
-        body: "Instead of letting seats go empty, we help venues and restaurants maximize capacity with what they already have.",
+        body: "Instead of letting places go empty, we help local businesses make full use of the capacity they already have.",
       },
       {
         title: "Increase accessibility",
-        body: "Make cultural experiences more accessible through affordable, last-minute offers that open doors for everyone.",
+        body: "Make local experiences more accessible through affordable, last-minute offers that open doors for everyone.",
       },
       {
         title: "Support small entrepreneurs",
-        body: "Give small theatres, performers, and restaurants visibility without large marketing budgets.",
+        body: "Give small local businesses and performers visibility without large marketing budgets.",
       },
       {
         title: "Strengthen local identity",
-        body: "Guide consumers to local services and boost urban cultural vibrancy through location-based discovery.",
+        body: "Guide consumers to local services and boost the vibrancy of the city through location-based discovery.",
       },
     ],
     infoTitle: "Company information",
@@ -169,19 +169,19 @@ export const ABOUT_TEXT = {
     stand: [
       {
         title: "Käytetään olemassa olevia resursseja",
-        body: "Sen sijaan että paikat jäävät tyhjiksi, autamme tiloja ja ravintoloita hyödyntämään kapasiteettinsa sillä, mitä niillä jo on.",
+        body: "Sen sijaan että paikat jäävät tyhjiksi, autamme paikallisia yrityksiä hyödyntämään kapasiteettinsa täysimääräisesti sillä, mitä niillä jo on.",
       },
       {
         title: "Parempaa saavutettavuutta",
-        body: "Teemme kulttuurielämykset helpommin saavutettaviksi edullisilla viime hetken tarjouksilla, jotka avaavat ovet kaikille.",
+        body: "Teemme paikalliset elämykset helpommin saavutettaviksi edullisilla viime hetken tarjouksilla, jotka avaavat ovet kaikille.",
       },
       {
         title: "Pienyrittäjien tukemista",
-        body: "Annamme pienille teattereille, esiintyjille ja ravintoloille näkyvyyttä ilman suuria markkinointibudjetteja.",
+        body: "Annamme pienille paikallisille yrityksille ja esiintyjille näkyvyyttä ilman suuria markkinointibudjetteja.",
       },
       {
         title: "Paikallisen identiteetin vahvistamista",
-        body: "Ohjaamme kuluttajia paikallisten palveluiden pariin ja lisäämme kaupunkikulttuurin elinvoimaa sijaintiin perustuvan löytämisen avulla.",
+        body: "Ohjaamme kuluttajia paikallisten palveluiden pariin ja lisäämme kaupungin elinvoimaa sijaintiin perustuvan löytämisen avulla.",
       },
     ],
     infoTitle: "Yrityksen tiedot",
