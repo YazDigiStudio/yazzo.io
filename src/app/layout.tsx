@@ -102,13 +102,17 @@ const organizationSchema = {
     },
     {
       "@type": "Person",
-      name: "Venla Ilona Blom",
-      sameAs: "https://www.linkedin.com/in/venla-ilona-blom/",
+      name: "Matti Paloniemi",
     },
     {
       "@type": "Person",
       name: "Erno Michelsson",
       sameAs: "https://www.linkedin.com/in/erno-michelsson-29283832b/",
+    },
+    {
+      "@type": "Person",
+      name: "Venla Ilona Blom",
+      sameAs: "https://www.linkedin.com/in/venla-ilona-blom/",
     },
   ],
 };

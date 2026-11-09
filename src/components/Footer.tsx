@@ -1,14 +1,18 @@
 // Site footer — dark purple to match the app's bottom navigation style.
 // Shows who runs the site: company details, grouped links and social profiles.
+// English by default; the Finnish pages (/fi/...) pass lang="fi".
 import Image from "next/image";
 import Link from "next/link";
 import { SOCIAL_LINKS } from "../lib/socialLinks";
 import { SOCIAL_ICON_PATHS } from "../lib/socialIcons";
+import { Lang, FOOTER_TEXT, pagePath } from "../content/siteText";
 
 const LINK_CLASS = "text-white/60 hover:text-white transition-colors";
 const HEADING_CLASS = "text-white font-semibold text-sm mb-3";
 
-export default function Footer() {
+export default function Footer({ lang = "en" }: { lang?: Lang }) {
+  const t = FOOTER_TEXT[lang];
+
   return (
     <footer className="bg-yazzo-900">
       <div className="max-w-7xl mx-auto px-6 py-10">
@@ -24,30 +28,27 @@ export default function Footer() {
             />
             <span className="text-white font-semibold text-lg">Yazzo.io Oy</span>
           </div>
-          <p className="text-white/60 text-sm md:max-w-xl">
-            Yazzo is a local discovery app for real-time offers, events and
-            experiences from restaurants, cafes, bars and local businesses.
-          </p>
+          <p className="text-white/60 text-sm md:max-w-xl">{t.description}</p>
         </div>
 
         {/* Link groups */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
           <div>
-            <h3 className={HEADING_CLASS}>Company</h3>
+            <h3 className={HEADING_CLASS}>{t.company}</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className={LINK_CLASS}>
-                  About us
+                <Link href={pagePath("about", lang)} className={LINK_CLASS}>
+                  {t.about}
                 </Link>
               </li>
               <li>
-                <Link href="/team" className={LINK_CLASS}>
-                  Team
+                <Link href={pagePath("team", lang)} className={LINK_CLASS}>
+                  {t.team}
                 </Link>
               </li>
               <li>
                 <Link href="/investors" className={LINK_CLASS}>
-                  Investors
+                  {t.investors}
                 </Link>
               </li>
               <li>
@@ -59,49 +60,49 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className={HEADING_CLASS}>Yazzo</h3>
+            <h3 className={HEADING_CLASS}>{t.yazzo}</h3>
             <ul className="space-y-2">
               <li>
-                <a href="https://yazzoapp.com/en" className={LINK_CLASS}>
-                  The Yazzo app
+                <a href={t.appUrl} className={LINK_CLASS}>
+                  {t.app}
                 </a>
               </li>
               <li>
-                <a href="https://yazzoapp.com/en/how-it-works" className={LINK_CLASS}>
-                  How Yazzo works
+                <a href={t.howUrl} className={LINK_CLASS}>
+                  {t.howItWorks}
                 </a>
               </li>
               <li>
                 <a href="https://partner.yazzoapp.com" className={LINK_CLASS}>
-                  For businesses
+                  {t.forBusinesses}
                 </a>
               </li>
               <li>
-                <a href="https://yazzoapp.com/en/support" className={LINK_CLASS}>
-                  Support
+                <a href={t.supportUrl} className={LINK_CLASS}>
+                  {t.support}
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className={HEADING_CLASS}>Legal</h3>
+            <h3 className={HEADING_CLASS}>{t.legal}</h3>
             <ul className="space-y-2">
               <li>
-                <a href="https://yazzoapp.com/en/terms" className={LINK_CLASS}>
-                  Terms of Service
+                <a href={t.termsUrl} className={LINK_CLASS}>
+                  {t.terms}
                 </a>
               </li>
               <li>
-                <a href="https://yazzoapp.com/en/privacy" className={LINK_CLASS}>
-                  Privacy Policy
+                <a href={t.privacyUrl} className={LINK_CLASS}>
+                  {t.privacy}
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className={HEADING_CLASS}>Follow us</h3>
+            <h3 className={HEADING_CLASS}>{t.follow}</h3>
             <div className="flex items-center gap-5">
               {SOCIAL_LINKS.map((social) => (
                 <a
@@ -109,7 +110,7 @@ export default function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`${social.name} — Follow us`}
+                  aria-label={`${social.name} — ${t.follow}`}
                   title={social.name}
                   className={LINK_CLASS}
                 >
@@ -129,11 +130,9 @@ export default function Footer() {
 
         {/* Company details and copyright */}
         <div className="mt-10 pt-6 border-t border-white/10 text-center">
-          <p className="text-white/60 text-xs">
-            Yazzo.io Oy · Business ID 3561958-3 · Helsinki, Finland
-          </p>
+          <p className="text-white/60 text-xs">{t.companyLine}</p>
           <p className="text-white/30 text-xs mt-2">
-            © {new Date().getFullYear()} Yazzo.io Oy. All rights reserved.
+            © {new Date().getFullYear()} Yazzo.io Oy. {t.rights}
           </p>
         </div>
       </div>
